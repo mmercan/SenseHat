@@ -25,7 +25,7 @@ using System.Threading.Tasks;
 
 using RTIMULibCS;
 
-namespace RTIMULibDrive
+namespace SenseHat
 {
     public class RTIMUThread
     {

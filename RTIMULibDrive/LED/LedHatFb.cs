@@ -116,7 +116,7 @@ namespace SenseHat
         #endregion
 
 
-        private async void LoadBitmap(string name)
+        public async void LoadBitmap(string name)
         {
             StorageFile srcfile = await StorageFile.GetFileFromApplicationUriAsync(new Uri(name));
             using (IRandomAccessStream fileStream = await srcfile.OpenAsync(Windows.Storage.FileAccessMode.Read))

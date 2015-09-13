@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="RTIMULibDrive.MainPage"
+    x:Class="SenseHat.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:RTIMULibDrive"
@@ -22,5 +22,15 @@
         <TextBlock x:Name="PressureTextStatus" HorizontalAlignment="Left" Margin="10,646,0,0" TextWrapping="Wrap" Text="Status: detecting pressure sensor" VerticalAlignment="Top" Width="1004" FontSize="27" TextAlignment="Left"/>
         <TextBlock x:Name="HumidityTextStatus" HorizontalAlignment="Left" Margin="10,687,0,0" TextWrapping="Wrap" Text="Status: detecting humidity sensor" VerticalAlignment="Top" Width="1004" FontSize="27" TextAlignment="Left"/>
         <TextBlock x:Name="BiasTextStatus" HorizontalAlignment="Left" Margin="10,564,0,0" TextWrapping="Wrap" Text="Bias status:" VerticalAlignment="Top" Width="1004" FontSize="27" TextAlignment="Left"/>
+      
+       <StackPanel VerticalAlignment="Bottom" >
+            <Button x:Name="btn_init" Click="btn_init_Click" Content="Init Leds" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            <Button x:Name="btn_flip" Click="btn_flip_Click" Content="Flip" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            <Button x:Name="btn_dim" Click="btn_dim_Click" Content="Dim" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            <Button x:Name="btn_change" Click="btn_change_Click" Content="Change Color" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+           
+        </StackPanel>
+       
+
     </Grid>
 </Page>

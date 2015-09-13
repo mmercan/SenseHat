@@ -7,8 +7,8 @@
     <ProjectGuid>{B52059FE-A1AE-48BA-A314-F8B86A236660}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RTIMULibDrive</RootNamespace>
-    <AssemblyName>RTIMULibDrive</AssemblyName>
+    <RootNamespace>SenseHat</RootNamespace>
+    <AssemblyName>SenseHat</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion>10.0.10240.0</TargetPlatformVersion>
@@ -125,6 +125,60 @@
     <None Include="RTIMULibDrive_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\char1.png" />
+    <Content Include="Assets\char2.png" />
+    <Content Include="Assets\char3.png" />
+    <Content Include="Assets\char4.png" />
+    <Content Include="Assets\char5.png" />
+    <Content Include="Assets\char6.png" />
+    <Content Include="Assets\char7.png" />
+    <Content Include="Assets\char8.png" />
+    <Content Include="Assets\piq.png" />
+    <Content Include="Assets\char9.png" />
+    <Content Include="Assets\rp.png" />
+    <Content Include="Assets\U0.png" />
+    <Content Include="Assets\U1.png" />
+    <Content Include="Assets\U2.png" />
+    <Content Include="Assets\U3.png" />
+    <Content Include="Assets\U4.png" />
+    <Content Include="Assets\U5.png" />
+    <Content Include="Assets\U6.png" />
+    <Content Include="Assets\U7.png" />
+    <Content Include="Assets\U8.png" />
+    <Content Include="Assets\U9.png" />
+    <Content Include="Assets\UA.png" />
+    <Content Include="Assets\UB.png" />
+    <Content Include="Assets\UC.png" />
+    <Content Include="Assets\UD - Copy %284%29.png" />
+    <Content Include="Assets\UD - Copy %285%29.png" />
+    <Content Include="Assets\UD - Copy %286%29.png" />
+    <Content Include="Assets\UD - Copy %287%29.png" />
+    <Content Include="Assets\UD - Copy %288%29.png" />
+    <Content Include="Assets\UD - Copy %289%29.png" />
+    <Content Include="Assets\UD - Copy.png" />
+    <Content Include="Assets\UD.png" />
+    <Content Include="Assets\UE.png" />
+    <Content Include="Assets\UF.png" />
+    <Content Include="Assets\UG.png" />
+    <Content Include="Assets\UH.png" />
+    <Content Include="Assets\UI.png" />
+    <Content Include="Assets\UJ.png" />
+    <Content Include="Assets\UK.png" />
+    <Content Include="Assets\UL.png" />
+    <Content Include="Assets\UM.png" />
+    <Content Include="Assets\UN.png" />
+    <Content Include="Assets\UO.png" />
+    <Content Include="Assets\UP.png" />
+    <Content Include="Assets\UQ.png" />
+    <Content Include="Assets\UR.png" />
+    <Content Include="Assets\US.png" />
+    <Content Include="Assets\UT.png" />
+    <Content Include="Assets\UU.png" />
+    <Content Include="Assets\UV.png" />
+    <Content Include="Assets\UW.png" />
+    <Content Include="Assets\UX.png" />
+    <Content Include="Assets\UY.png" />
+    <Content Include="Assets\UZ.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
