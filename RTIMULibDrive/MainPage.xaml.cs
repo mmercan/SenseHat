@@ -50,6 +50,9 @@ namespace SenseHat
             CallmeBaby();
             this.Loaded += MainPage_Loaded;
 
+          //  UltraSonic sonic = new UltraSonic(6, 5);
+         //   sonic.GetDistance()
+
          }
 
         private void MainPage_Loaded(object sender, Windows.UI.Xaml.RoutedEventArgs e)
@@ -125,6 +128,7 @@ namespace SenseHat
             }
             I2cConnectionSettings settings = new I2cConnectionSettings(0x5f);
             settings.BusSpeed = I2cBusSpeed.FastMode;
+
             I2cDevice device = await I2cDevice.FromIdAsync(collection[0].Id, settings);
 
 
@@ -288,12 +292,30 @@ namespace SenseHat
 
         private void btn_flip_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
         {
-
+            byte[] read_buffer;
+            read_buffer = _ledHat.ReadLEDMatrix();
+            byte[] write_buffer = new byte[192];
+            for (int i = 0; i < 192; i++)
+            {
+                write_buffer[i] = (byte)(0xFF - read_buffer[i]);
+            }
+            _ledHat.WriteLEDMatrix(write_buffer);
         }
         
         private void btn_dim_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
         {
+            byte[] read_buffer;
+            read_buffer = _ledHat.ReadLEDMatrix();
+            byte[] write_buffer = new byte[192];
+            for (int i = 0; i < 192; i++)
+            {
+                byte v = read_buffer[i];
 
+                var val = v - 10 > 0 ? v - 10 : 0;
+
+                write_buffer[i] = (byte)(val);
+            }
+            _ledHat.WriteLEDMatrix(write_buffer);
         }
 
         int charnumber = 1;
